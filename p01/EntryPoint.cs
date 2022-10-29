@@ -45,8 +45,8 @@ namespace p01 {
 
             SortedArray array = new SortedArray(tab);
             array.print();
-            array.insertv2(8);
-            Console.WriteLine("On ajoute " + 8 + " : ");
+            array.insertv2(-1);
+            Console.WriteLine("On ajoute -1 : ");
             array.print();
         }
 

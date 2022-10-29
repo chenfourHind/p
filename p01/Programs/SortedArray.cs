@@ -45,7 +45,7 @@ namespace p01.Programs{
             Array.Resize(ref tab, tab.Length + 1);
             length = tab.Length;
 
-            for (int i = length - 1; i >= 0; i--) {
+            for (int i = length - 1; i > 0; i--) {
                 if (number > tab[i - 1]) {
                     tab[i] = number;
                     i = -1;
@@ -54,6 +54,9 @@ namespace p01.Programs{
                 else {
                     tab[i] = tab[i - 1];
                 }
+            }
+            if (tab[0] > number){
+                tab[0] = number;
             }
         }
 
